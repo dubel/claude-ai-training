@@ -148,8 +148,8 @@ def draw_page(canvas: Canvas) -> None:
 def build_pdf() -> None:
     register_fonts()
     intro, sections = parse_source()
-    if len(sections) != 52:
-        raise ValueError(f"Expected 52 slide sections, found {len(sections)}")
+    if len(sections) != 53:
+        raise ValueError(f"Expected 53 slide sections, found {len(sections)}")
 
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     styles = getSampleStyleSheet()
