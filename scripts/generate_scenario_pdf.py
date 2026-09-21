@@ -260,7 +260,7 @@ def build_pdf() -> None:
     y -= 7 * mm
     y = draw_flowable(Paragraph("Scenariusz<br/>prowadzącego", cover_title), cover_x, y, cover_width)
     y -= 8 * mm
-    y = draw_flowable(Paragraph("Polskie notatki do 52 angielskich slajdów", cover_subtitle), cover_x, y, cover_width)
+    y = draw_flowable(Paragraph("Polskie notatki do 53 angielskich slajdów", cover_subtitle), cover_x, y, cover_width)
     y -= 17 * mm
 
     cover_info = Table(
@@ -298,13 +298,13 @@ def build_pdf() -> None:
 
     agenda_rows = [
         ("START", "Slajdy 1-4", "Cel i mapa spotkania"),
-        ("01", "Slajdy 5-11", "Poziomy adopcji"),
-        ("02", "Slajdy 12-18", "Architektura systemów agentowych"),
-        ("03", "Slajdy 19-25", "Claude Code"),
-        ("04", "Slajdy 26-31", "Niezawodność i guardrails"),
-        ("05", "Slajdy 32-36", "SDLC i współpraca"),
-        ("06", "Slajdy 37-46", "Koszt, jakość i analiza porażek"),
-        ("07", "Slajdy 47-52", "Hackathon i zamknięcie"),
+        ("01", "Slajdy 5-12", "Poziomy adopcji i spec-driven development"),
+        ("02", "Slajdy 13-19", "Architektura systemów agentowych"),
+        ("03", "Slajdy 20-26", "Claude Code"),
+        ("04", "Slajdy 27-32", "Niezawodność i guardrails"),
+        ("05", "Slajdy 33-37", "SDLC i współpraca"),
+        ("06", "Slajdy 38-47", "Koszt, jakość i analiza porażek"),
+        ("07", "Slajdy 48-53", "Hackathon i zamknięcie"),
     ]
     agenda = Table(
         [[Paragraph(f"<b>{a}</b>", small_style), Paragraph(b, small_style), Paragraph(c, small_style)] for a, b, c in agenda_rows],

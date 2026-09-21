@@ -74,9 +74,17 @@ Zaznacz kolejność: najpierw standaryzacja, potem automatyzacja, dopiero późn
 
 ## 12. Spec-driven frameworks
 
-Pokaż trzy sposoby przełożenia tej samej zasady na praktyczny workflow. **GitHub Spec Kit** prowadzi specyfikację przez plan, zadania, implementację i sprawdzenie zgodności. **GSD Core** używa hasła „Git. Ship. Done.” i organizuje pracę w pętlę discuss, plan, execute, verify i ship. **BMad Method** dopasowuje głębokość procesu do zmiany i udostępnia wyspecjalizowane perspektywy produktowe, architektoniczne, implementacyjne oraz testowe.
+**Cel:** pokazać, że **spec-driven development** jest wzorcem pracy, a nie jednym produktem ani obowiązkową metodyką. Wspólny mianownik tych podejść to zapisanie intencji przed implementacją, przekazywanie kontekstu przez trwałe artefakty oraz osobny krok sprawdzający zgodność wyniku ze specyfikacją.
 
-Nie przedstawiaj tych frameworków jako kolejnych poziomów dojrzałości ani rankingu. Wszystkie operacjonalizują kontrakt, trwały kontekst i weryfikację, ale różnią się zakresem procesu. Wybór zależy od wielkości zmiany, dojrzałości repozytorium i wymaganego poziomu kontroli.
+**GitHub Spec Kit** proponuje czytelny łańcuch: specify, plan, tasks, implement i converge. Każdy etap wytwarza artefakt Markdown dla kolejnego etapu. Podkreśl, że implementacja nie zaczyna się od luźnego promptu, tylko od uzgodnionego opisu problemu i kryteriów.
+
+**GSD Core** organizuje pracę w pętlę discuss, plan, execute, verify i ship. Jego charakterystyczny element to przenoszenie decyzji przez pliki stanu i uruchamianie ciężkiej pracy w świeżych kontekstach. Dzięki temu framework próbuje ograniczać **context rot**, czyli pogorszenie jakości wraz z przepełnianiem okna kontekstowego.
+
+**BMad Method** dobiera głębokość procesu do wielkości zmiany. Prosta poprawka może przejść bez rozbudowanego planowania, a większa inicjatywa otrzymuje dodatkowe perspektywy produktowe, architektoniczne, implementacyjne i testowe. Najważniejsza jest tu zasada **right-sized process**: proces powinien być wystarczający, ale nie cięższy niż problem.
+
+Nie przedstawiaj tych frameworków jako rankingu ani kolejnych poziomów dojrzałości. Jako wskazówkę dla zespołu powiedz: wybieramy **najlżejszy proces**, który zachowuje decyzje, kryteria akceptacji i dowody weryfikacji. Nazwa narzędzia jest mniej ważna niż jakość kontraktu i dyscyplina przejścia od specyfikacji do testu.
+
+**Przejście:** „Framework porządkuje workflow. Teraz zobaczmy, jaki system faktycznie wykonuje tę pracę i gdzie powstają decyzje agenta.”
 
 ## 13. Agentic system architecture
 
@@ -308,7 +316,7 @@ Ten rytm ogranicza koszt fałszywego startu i szybko dostarcza informację zwrot
 
 Nie czytaj wszystkich linków. Wskaż trzy ścieżki: dokumentację Claude Code dla konfiguracji, „Building Effective AI Agents” dla architektury oraz „Demystifying Evals” dla mierzenia jakości.
 
-Powiedz, że `SOURCES.md` zawiera pełną listę, linki do RTK, Caveman i Ponytail oraz zastrzeżenia dotyczące szybko zmieniających się funkcji.
+Powiedz, że `SOURCES.md` zawiera pełną listę, w tym dokumentację **GitHub Spec Kit**, **GSD Core** i **BMad Method**, linki do RTK, Caveman i Ponytail oraz zastrzeżenia dotyczące szybko zmieniających się funkcji.
 
 ## 53. Controlled autonomy
 
