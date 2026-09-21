@@ -25,6 +25,8 @@ Use the browser print dialog and select landscape orientation. The print stylesh
 
 The deck is an introduction and contains no exercises. Its modular structure allows the presenter to skip a complete section without breaking the narrative. Current sources and caveats are listed in `SOURCES.md`.
 
+Polish presenter notes are available as [`SCENARIUSZ.md`](SCENARIUSZ.md) and as a print-ready A4 PDF: [`output/pdf/SCENARIUSZ.pdf`](output/pdf/SCENARIUSZ.pdf).
+
 ## Validation
 
 ```bash
@@ -32,3 +34,5 @@ npm test
 ```
 
 The script checks slide structure, metadata, and references to local files.
+
+To regenerate the printable presenter script, run `scripts/generate_scenario_pdf.py` with a Python environment that includes ReportLab.
