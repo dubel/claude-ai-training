@@ -1,34 +1,34 @@
 # AI Enablement - Claude Code kickoff
 
-Statyczna prezentacja HTML na kickoff hackathonu CyberArk MIS 2026. Materiał obejmuje poziomy adopcji AI, architekturę systemów agentowych, Claude Code, halucynacje, guardrails, SDLC, współpracę wieloosobową, FinOps, regresje jakości oraz analizę porażek.
+A static HTML presentation for the CyberArk MIS 2026 hackathon kickoff. The material covers AI adoption levels, agentic system architecture, Claude Code, hallucinations, guardrails, SDLC, team collaboration, FinOps, quality regressions, and failure analysis.
 
-## Uruchomienie
+## Open the presentation
 
-Serwer WWW nie jest potrzebny. Otwórz plik `index.html` bezpośrednio w przeglądarce.
+No web server is required. Open `index.html` directly in a browser.
 
-Sterowanie:
+Controls:
 
-- `→`, `Space`, `PageDown` - następny slajd
-- `←`, `PageUp` - poprzedni slajd
-- `Home`, `End` - początek lub koniec
-- `O` - overview wszystkich slajdów
-- `F` - pełny ekran
-- `?` - pomoc
+- `→`, `Space`, `PageDown` - next slide
+- `←`, `PageUp` - previous slide
+- `Home`, `End` - first or last slide
+- `O` - overview of all slides
+- `F` - full screen
+- `?` - help
 
-Adres może zawierać numer slajdu, na przykład `index.html#/18`.
+The URL may include a slide number, for example `index.html#/18`.
 
-## Druk i PDF
+## Print or export to PDF
 
-Użyj funkcji drukowania w przeglądarce i wybierz układ poziomy. Arkusz stylów drukuje każdy slajd na osobnej stronie w proporcji 16:9.
+Use the browser print dialog and select landscape orientation. The print stylesheet places each slide on a separate 16:9 page.
 
-## Zakres
+## Scope
 
-Prezentacja jest materiałem typu intro i nie zawiera ćwiczeń. Slajdy mają układ modułowy, więc prowadzący może pominąć cały blok bez utraty ciągłości. Aktualne źródła i zastrzeżenia znajdują się w `SOURCES.md`.
+The deck is an introduction and contains no exercises. Its modular structure allows the presenter to skip a complete section without breaking the narrative. Current sources and caveats are listed in `SOURCES.md`.
 
-## Weryfikacja
+## Validation
 
 ```bash
 npm test
 ```
 
-Skrypt sprawdza strukturę prezentacji, metadane slajdów i odwołania do lokalnych plików.
+The script checks slide structure, metadata, and references to local files.

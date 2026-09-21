@@ -175,6 +175,15 @@ code, pre { font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospac
 .three-column b { display: block; margin: 18px 0 50px; font-family: Georgia, serif; font-size: 29px; }
 .three-column p { color: var(--muted); font-size: 16px; }
 
+.three-tools { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; }
+.three-tools > div { min-height: 275px; padding: 28px; background: #211025; border-top: 7px solid #52344f; }
+.three-tools > div:nth-child(1) { border-color: var(--cyan); }
+.three-tools > div:nth-child(2) { border-color: var(--amber); }
+.three-tools > div:nth-child(3) { border-color: var(--magenta); background: #2b1028; }
+.three-tools b { display: block; font-family: Georgia, serif; font-size: 34px; }
+.three-tools span { display: block; margin-top: 8px; color: var(--muted); font-size: 12px; font-weight: 780; letter-spacing: .1em; text-transform: uppercase; }
+.three-tools p { margin-top: 52px; color: #d3c5d0; font-size: 16px; }
+
 .evidence-table { display: grid; gap: 4px; margin-top: 10px; }
 .evidence-table > div { display: grid; grid-template-columns: 150px 1.3fr 1fr; align-items: center; min-height: 73px; padding: 0 21px; background: #211025; }
 .evidence-table b { color: var(--muted); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; }.evidence-table span { font-size: 17px; }.evidence-table strong { color: #ff70bd; font-size: 16px; }

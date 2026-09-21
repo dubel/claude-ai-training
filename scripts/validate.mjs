@@ -10,24 +10,24 @@ const js = fs.readFileSync(path.join(root, "slides.js"), "utf8");
 const slides = [...html.matchAll(/<section class="[^"]*\bslide\b[^"]*"[^>]*>/g)].map((match) => match[0]);
 const errors = [];
 
-if (slides.length < 35) errors.push(`Za mało slajdów: ${slides.length}`);
+if (slides.length < 35) errors.push(`Too few slides: ${slides.length}`);
 slides.forEach((slide, index) => {
-  if (!/data-section="[^"]+"/.test(slide)) errors.push(`Slajd ${index + 1}: brak data-section`);
-  if (!/data-title="[^"]+"/.test(slide)) errors.push(`Slajd ${index + 1}: brak data-title`);
+  if (!/data-section="[^"]+"/.test(slide)) errors.push(`Slide ${index + 1}: missing data-section`);
+  if (!/data-title="[^"]+"/.test(slide)) errors.push(`Slide ${index + 1}: missing data-title`);
 });
 
 for (const localFile of ["styles.css", "slides.js"]) {
-  if (!html.includes(localFile)) errors.push(`Brak odwołania do ${localFile}`);
-  if (!fs.existsSync(path.join(root, localFile))) errors.push(`Brak pliku ${localFile}`);
+  if (!html.includes(localFile)) errors.push(`Missing reference to ${localFile}`);
+  if (!fs.existsSync(path.join(root, localFile))) errors.push(`Missing file: ${localFile}`);
 }
 
-if (!css.includes("@media print")) errors.push("Brak stylów druku");
-if (!js.includes("indexFromHash")) errors.push("Brak nawigacji przez hash");
-if (/https?:\/\/[^"']+\.(woff2?|ttf|otf)/i.test(html + css)) errors.push("Zewnętrzna czcionka łamie tryb offline");
+if (!css.includes("@media print")) errors.push("Missing print styles");
+if (!js.includes("indexFromHash")) errors.push("Missing hash navigation");
+if (/https?:\/\/[^"']+\.(woff2?|ttf|otf)/i.test(html + css)) errors.push("An external font breaks offline mode");
 
 if (errors.length) {
   console.error(errors.join("\n"));
   process.exit(1);
 }
 
-console.log(`OK: ${slides.length} slajdów, prezentacja działa bez zewnętrznych zasobów.`);
+console.log(`OK: ${slides.length} slides; the presentation runs without external assets.`);

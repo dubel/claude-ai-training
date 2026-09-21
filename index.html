@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="pl">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#130718">
-  <meta name="description" content="AI Enablement - kickoff do hackathonu CyberArk MIS 2026, Claude Code i systemy agentowe">
+  <meta name="description" content="AI Enablement kickoff for the CyberArk MIS 2026 hackathon, Claude Code, and agentic systems">
   <title>AI Enablement - Claude Code kickoff</title>
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -14,214 +14,214 @@
       <div class="cover-mark" aria-hidden="true">C</div>
       <p class="eyebrow">AI HACKATHON · CYBERARK MIS 2026</p>
       <h1>AI Enablement<br><span>Claude Code kickoff</span></h1>
-      <p class="lede">Od pojedynczego promptu do kontrolowanej autonomii w zespole.</p>
-      <div class="cover-meta"><span>MICHAEL DUBEL</span><span>ARCHITEKTURA</span><span>SDLC</span><span>FINOPS</span></div>
+      <p class="lede">From a single prompt to controlled autonomy across a team.</p>
+      <div class="cover-meta"><span>MICHAEL DUBEL</span><span>ARCHITECTURE</span><span>SDLC</span><span>FINOPS</span></div>
     </section>
 
     <section class="slide statement" data-section="START" data-title="Reality check">
       <p class="eyebrow">REALITY CHECK</p>
-      <h2>Model proponuje.<br><span>System agentowy działa.</span></h2>
-      <p class="big-copy">Wynik zależy od modelu, kontekstu, narzędzi, środowiska wykonania i mechanizmu kontroli.</p>
-      <p class="source-tag">Źródło: Anthropic, Building Effective AI Agents.</p>
+      <h2>The model proposes.<br><span>The agentic system acts.</span></h2>
+      <p class="big-copy">The outcome depends on the model, context, tools, execution environment, and control mechanism.</p>
+      <p class="source-tag">Source: Anthropic, Building Effective AI Agents.</p>
     </section>
 
-    <section class="slide" data-section="START" data-title="Cel kickoffu">
-      <p class="eyebrow">CEL KICKOFFU</p>
-      <h2>Wspólny język przed pierwszym zadaniem</h2>
+    <section class="slide" data-section="START" data-title="Kickoff goal">
+      <p class="eyebrow">KICKOFF GOAL</p>
+      <h2>A shared language before the first task</h2>
       <div class="four-column outcomes">
-        <div><b>01</b><p>Rozpoznać poziom autonomii</p></div>
-        <div><b>02</b><p>Ustawić granice działania</p></div>
-        <div><b>03</b><p>Mierzyć wynik i koszt</p></div>
-        <div><b>04</b><p>Analizować porażki bez zgadywania</p></div>
+        <div><b>01</b><p>Identify the autonomy level</p></div>
+        <div><b>02</b><p>Set execution boundaries</p></div>
+        <div><b>03</b><p>Measure outcome and cost</p></div>
+        <div><b>04</b><p>Analyze failures with evidence</p></div>
       </div>
-      <p class="caption">Deck jest modułowy. Sekcje można skracać lub pomijać zależnie od dyskusji.</p>
+      <p class="caption">The deck is modular. Shorten or skip sections to match the discussion.</p>
     </section>
 
-    <section class="slide" data-section="START" data-title="Mapa spotkania">
-      <p class="eyebrow">OKOŁO 2 GODZIN · FORMAT PIGUŁY</p>
-      <h2>Mapa spotkania</h2>
+    <section class="slide" data-section="START" data-title="Session map">
+      <p class="eyebrow">ABOUT 2 HOURS · COMPACT FORMAT</p>
+      <h2>Session map</h2>
       <div class="agenda-line">
-        <span><b>01</b> adopcja</span><span><b>02</b> architektura</span><span><b>03</b> Claude Code</span>
-        <span><b>04</b> niezawodność</span><span><b>05</b> SDLC</span><span><b>06</b> koszt</span><span><b>07</b> hackathon</span>
+        <span><b>01</b> adoption</span><span><b>02</b> architecture</span><span><b>03</b> Claude Code</span>
+        <span><b>04</b> reliability</span><span><b>05</b> SDLC</span><span><b>06</b> cost</span><span><b>07</b> hackathon</span>
       </div>
-      <p class="callout">Każdy blok odpowiada na jedno pytanie: ile decyzji oddajemy agentowi i jak sprawdzamy rezultat?</p>
+      <p class="callout">Each section answers one question: how many decisions do we delegate, and how do we verify the result?</p>
     </section>
 
-    <section class="slide section-slide" data-section="01" data-title="Poziomy adopcji">
+    <section class="slide section-slide" data-section="01" data-title="Adoption levels">
       <span class="section-no">01</span>
-      <div><p class="eyebrow">POZIOMY ADOPCJI</p><h2>Zakres delegowanych decyzji</h2><p class="lede">Licencja nie określa dojrzałości. Określa ją powtarzalny sposób pracy zespołu.</p></div>
+      <div><p class="eyebrow">ADOPTION LEVELS</p><h2>The scope of delegated decisions</h2><p class="lede">A license does not define maturity. A repeatable team workflow does.</p></div>
     </section>
 
-    <section class="slide" data-section="01" data-title="Pięć poziomów adopcji">
-      <p class="eyebrow">MODEL ROBOCZY · POZIOM JEST PER PROCES</p>
-      <h2>Pięć poziomów adopcji</h2>
+    <section class="slide" data-section="01" data-title="Five adoption levels">
+      <p class="eyebrow">WORKING MODEL · THE LEVEL IS PROCESS SPECIFIC</p>
+      <h2>Five adoption levels</h2>
       <div class="maturity-stairs">
-        <div><b>1</b><span>Prompting</span><small>odpowiedź</small></div>
-        <div><b>2</b><span>Assisted coding</span><small>edycja</small></div>
-        <div><b>3</b><span>Agentic coding</span><small>zadanie</small></div>
-        <div><b>4</b><span>Spec driven</span><small>kontrakt</small></div>
-        <div><b>5</b><span>Bounded autonomy</span><small>proces</small></div>
+        <div><b>1</b><span>Prompting</span><small>answer</small></div>
+        <div><b>2</b><span>Assisted coding</span><small>edit</small></div>
+        <div><b>3</b><span>Agentic coding</span><small>task</small></div>
+        <div><b>4</b><span>Spec driven</span><small>contract</small></div>
+        <div><b>5</b><span>Bounded autonomy</span><small>process</small></div>
       </div>
-      <p class="caption">Klasyfikacja warsztatowa oparta na materiałach wejściowych. Nie jest standardem branżowym.</p>
+      <p class="caption">A workshop classification based on the source material. This is not an industry standard.</p>
     </section>
 
-    <section class="slide level-slide" data-section="01" data-title="Poziomy 1 i 2">
+    <section class="slide level-slide" data-section="01" data-title="Levels 1 and 2">
       <div class="level-number">1–2</div>
       <div class="level-copy">
         <p class="eyebrow">PROMPTING · ASSISTED CODING</p>
-        <h2>Człowiek steruje zmianą</h2>
-        <p>Claude wyjaśnia kod, proponuje fragmenty i wykonuje małe edycje. Człowiek dobiera kontekst oraz ocenia każdy wynik.</p>
-        <div class="boundary"><b>Granica</b><span>Brak samodzielnej realizacji wieloetapowego zadania.</span></div>
+        <h2>A human controls the change</h2>
+        <p>Claude explains code, proposes snippets, and makes small edits. A human selects the context and evaluates every output.</p>
+        <div class="boundary"><b>Boundary</b><span>No independent execution of a multi-step task.</span></div>
       </div>
     </section>
 
-    <section class="slide level-slide" data-section="01" data-title="Poziom 3">
+    <section class="slide level-slide" data-section="01" data-title="Level 3">
       <div class="level-number">3</div>
       <div class="level-copy">
         <p class="eyebrow">AGENTIC CODING</p>
-        <h2>Agent realizuje zadanie</h2>
-        <p>Bada repozytorium, planuje, edytuje wiele plików, uruchamia komendy i korzysta z wyniku testów.</p>
-        <div class="boundary"><b>Kontrola</b><span>Plan, uprawnienia, testy i review różnicy w kodzie.</span></div>
+        <h2>The agent completes a task</h2>
+        <p>It investigates the repository, plans, edits multiple files, runs commands, and uses test results as feedback.</p>
+        <div class="boundary"><b>Control</b><span>Plan, permissions, tests, and diff review.</span></div>
       </div>
     </section>
 
-    <section class="slide level-slide" data-section="01" data-title="Poziom 4">
+    <section class="slide level-slide" data-section="01" data-title="Level 4">
       <div class="level-number">4</div>
       <div class="level-copy">
         <p class="eyebrow">SPEC DRIVEN DEVELOPMENT</p>
-        <h2>Specyfikacja prowadzi pracę</h2>
-        <p>Problem, kryteria akceptacji i sposób weryfikacji tworzą kontrakt. Wiedza zespołu żyje w repozytorium.</p>
-        <div class="boundary"><b>Kontrola</b><span>Wersjonowane instrukcje, skills, hooks i quality gates.</span></div>
+        <h2>The specification drives the work</h2>
+        <p>The problem, acceptance criteria, and verification method form a contract. Team knowledge lives in the repository.</p>
+        <div class="boundary"><b>Control</b><span>Versioned instructions, skills, hooks, and quality gates.</span></div>
       </div>
     </section>
 
-    <section class="slide level-slide" data-section="01" data-title="Poziom 5">
+    <section class="slide level-slide" data-section="01" data-title="Level 5">
       <div class="level-number">5</div>
       <div class="level-copy">
         <p class="eyebrow">BOUNDED AUTONOMY</p>
-        <h2>Automatyzacja całego procesu</h2>
-        <p>Agenci obsługują kolejkę zadań lub fragment pipeline. Autonomia działa w sandboxie, z limitem kosztu i jasnym warunkiem zatrzymania.</p>
-        <div class="boundary"><b>Warunek wejścia</b><span>Stabilny proces, obserwowalność oraz dowody jakości.</span></div>
+        <h2>Automation across the process</h2>
+        <p>Agents handle a task queue or part of a pipeline. Autonomy runs in a sandbox with a cost limit and a clear stopping condition.</p>
+        <div class="boundary"><b>Entry criteria</b><span>A stable process, observability, and quality evidence.</span></div>
       </div>
     </section>
 
-    <section class="slide" data-section="01" data-title="Ruch w górę">
-      <p class="eyebrow">RUCH W GÓRĘ KRZYWEJ</p>
-      <h2>Autonomia rośnie po spełnieniu bramek</h2>
+    <section class="slide" data-section="01" data-title="Moving up the curve">
+      <p class="eyebrow">MOVING UP THE CURVE</p>
+      <h2>Autonomy grows after the gates are met</h2>
       <div class="gate-track">
-        <div><b>Powtarzalność</b><span>zadanie ma znany wzorzec</span></div>
-        <div><b>Weryfikacja</b><span>wynik da się sprawdzić</span></div>
-        <div><b>Izolacja</b><span>błąd ma mały promień rażenia</span></div>
-        <div><b>Obserwowalność</b><span>zostaje ślad decyzji i kosztu</span></div>
+        <div><b>Repeatability</b><span>the task follows a known pattern</span></div>
+        <div><b>Verification</b><span>the outcome can be checked</span></div>
+        <div><b>Isolation</b><span>an error has a small blast radius</span></div>
+        <div><b>Observability</b><span>decisions and cost leave a trace</span></div>
       </div>
-      <p class="callout">Najpierw standaryzacja. Potem automatyzacja. Na końcu większa autonomia.</p>
+      <p class="callout">Standardize first. Automate next. Increase autonomy after the workflow is measurable.</p>
     </section>
 
-    <section class="slide section-slide" data-section="02" data-title="Architektura systemów agentowych">
+    <section class="slide section-slide" data-section="02" data-title="Agentic system architecture">
       <span class="section-no">02</span>
-      <div><p class="eyebrow">ARCHITEKTURA</p><h2>Agent to pętla ze sprzężeniem zwrotnym</h2><p class="lede">Model podejmuje kolejne decyzje na podstawie obserwacji ze środowiska.</p></div>
+      <div><p class="eyebrow">ARCHITECTURE</p><h2>An agent is a feedback loop</h2><p class="lede">The model makes each next decision from observations returned by the environment.</p></div>
     </section>
 
-    <section class="slide" data-section="02" data-title="Minimalna architektura agenta">
-      <p class="eyebrow">MINIMALNA ARCHITEKTURA</p>
-      <h2>Elementy systemu agentowego</h2>
+    <section class="slide" data-section="02" data-title="Minimal agent architecture">
+      <p class="eyebrow">MINIMAL ARCHITECTURE</p>
+      <h2>Components of an agentic system</h2>
       <div class="agent-architecture">
-        <div class="input"><b>Cel + kontrakt</b><small>co oznacza done</small></div>
-        <div class="core"><span>kontekst</span><b>MODEL + ORCHESTRATOR</b><span>pamięć robocza</span></div>
-        <div class="tools"><b>Narzędzia</b><span>pliki · shell · API · MCP</span></div>
-        <div class="environment"><b>Środowisko</b><span>repo · testy · systemy</span></div>
-        <div class="verifier"><b>Weryfikator</b><span>test · reguła · człowiek</span></div>
+        <div class="input"><b>Goal + contract</b><small>what done means</small></div>
+        <div class="core"><span>context</span><b>MODEL + ORCHESTRATOR</b><span>working memory</span></div>
+        <div class="tools"><b>Tools</b><span>files · shell · API · MCP</span></div>
+        <div class="environment"><b>Environment</b><span>repo · tests · systems</span></div>
+        <div class="verifier"><b>Verifier</b><span>test · policy · human</span></div>
       </div>
-      <p class="source-tag">Wzorzec: augmented LLM oraz agent loop, Anthropic.</p>
+      <p class="source-tag">Pattern: augmented LLM and agent loop, Anthropic.</p>
     </section>
 
-    <section class="slide" data-section="02" data-title="Pętla działania">
-      <p class="eyebrow">PĘTLA DZIAŁANIA</p>
-      <h2>Każdy krok powinien wytwarzać obserwację</h2>
+    <section class="slide" data-section="02" data-title="The agent loop">
+      <p class="eyebrow">THE AGENT LOOP</p>
+      <h2>Every step should produce an observation</h2>
       <ol class="process-row">
-        <li><b>1</b><span>zbadaj stan</span></li><li><b>2</b><span>wybierz działanie</span></li>
-        <li><b>3</b><span>użyj narzędzia</span></li><li><b>4</b><span>odczytaj wynik</span></li>
-        <li><b>5</b><span>oceń postęp</span></li><li><b>6</b><span>zakończ lub powtórz</span></li>
+        <li><b>1</b><span>inspect state</span></li><li><b>2</b><span>choose an action</span></li>
+        <li><b>3</b><span>use a tool</span></li><li><b>4</b><span>read the result</span></li>
+        <li><b>5</b><span>assess progress</span></li><li><b>6</b><span>stop or repeat</span></li>
       </ol>
-      <p class="callout">Test, diff i odpowiedź API są lepszym sygnałem niż pewny ton modelu.</p>
+      <p class="callout">A test result, diff, or API response provides stronger evidence than the model's confident tone.</p>
     </section>
 
-    <section class="slide" data-section="02" data-title="Workflow i agent">
-      <p class="eyebrow">DETERMINIZM I AUTONOMIA</p>
-      <h2>Workflow zna ścieżkę. Agent wybiera ścieżkę.</h2>
+    <section class="slide" data-section="02" data-title="Workflow and agent">
+      <p class="eyebrow">DETERMINISM AND AUTONOMY</p>
+      <h2>A workflow knows the path. An agent chooses the path.</h2>
       <div class="compare-columns">
         <div>
-          <h3>Workflow</h3><b>Znana sekwencja</b>
-          <p>Stałe kroki, przewidywalny koszt, prosta analiza błędu. Najlepszy, gdy proces można opisać z góry.</p>
+          <h3>Workflow</h3><b>Known sequence</b>
+          <p>Fixed steps, predictable cost, and straightforward failure analysis. Best when the process can be described in advance.</p>
         </div>
         <div class="accent-panel">
-          <h3>Agent</h3><b>Dynamiczne decyzje</b>
-          <p>Dobiera narzędzia i liczbę kroków. Potrzebuje limitów, obserwowalności oraz warunku zatrzymania.</p>
+          <h3>Agent</h3><b>Dynamic decisions</b>
+          <p>Chooses tools and the number of steps. Needs limits, observability, and a stopping condition.</p>
         </div>
       </div>
     </section>
 
-    <section class="slide" data-section="02" data-title="Wzorce architektoniczne">
-      <p class="eyebrow">WZORCE ARCHITEKTONICZNE</p>
-      <h2>Złożoność ma koszt operacyjny</h2>
+    <section class="slide" data-section="02" data-title="Architecture patterns">
+      <p class="eyebrow">ARCHITECTURE PATTERNS</p>
+      <h2>Complexity carries an operating cost</h2>
       <div class="patterns">
-        <div><b>Łańcuch</b><span>kolejne stałe kroki</span></div>
-        <div><b>Routing</b><span>wybór wyspecjalizowanej ścieżki</span></div>
-        <div><b>Równoległość</b><span>niezależne zadania lub głosy</span></div>
-        <div><b>Orchestrator</b><span>dynamiczny podział pracy</span></div>
-        <div><b>Evaluator</b><span>iteracja według kryteriów</span></div>
+        <div><b>Chaining</b><span>a fixed sequence of steps</span></div>
+        <div><b>Routing</b><span>selection of a specialized path</span></div>
+        <div><b>Parallelization</b><span>independent tasks or votes</span></div>
+        <div><b>Orchestrator</b><span>dynamic work decomposition</span></div>
+        <div><b>Evaluator</b><span>iteration against criteria</span></div>
       </div>
-      <p class="source-tag">Źródło: Anthropic, Building Effective AI Agents.</p>
+      <p class="source-tag">Source: Anthropic, Building Effective AI Agents.</p>
     </section>
 
-    <section class="slide" data-section="02" data-title="Macierz autonomii">
-      <p class="eyebrow">CZTERY WYMIARY AUTONOMII</p>
-      <h2>Autonomia nie jest pojedynczym przełącznikiem</h2>
+    <section class="slide" data-section="02" data-title="Autonomy matrix">
+      <p class="eyebrow">FOUR DIMENSIONS OF AUTONOMY</p>
+      <h2>Autonomy has multiple dimensions</h2>
       <table class="decision-table autonomy-table">
-        <thead><tr><th>Wymiar</th><th>Niska autonomia</th><th>Wyższa autonomia</th><th>Twarda granica</th></tr></thead>
+        <thead><tr><th>Dimension</th><th>Low autonomy</th><th>Higher autonomy</th><th>Hard boundary</th></tr></thead>
         <tbody>
-          <tr><td>Decyzja</td><td>plan zatwierdza człowiek</td><td>agent planuje sam</td><td>zakres zadania</td></tr>
-          <tr><td>Narzędzia</td><td>odczyt</td><td>edycja i wykonanie</td><td>allow / deny</td></tr>
-          <tr><td>Środowisko</td><td>lokalny sandbox</td><td>systemy zewnętrzne</td><td>tożsamość i egress</td></tr>
-          <tr><td>Czas</td><td>jedna odpowiedź</td><td>wiele iteracji</td><td>budżet i stop condition</td></tr>
+          <tr><td>Decision</td><td>a human approves the plan</td><td>the agent plans independently</td><td>task scope</td></tr>
+          <tr><td>Tools</td><td>read only</td><td>edit and execute</td><td>allow / deny</td></tr>
+          <tr><td>Environment</td><td>local sandbox</td><td>external systems</td><td>identity and egress</td></tr>
+          <tr><td>Time</td><td>one response</td><td>multiple iterations</td><td>budget and stop condition</td></tr>
         </tbody>
       </table>
     </section>
 
-    <section class="slide" data-section="02" data-title="Budżet ryzyka">
-      <p class="eyebrow">BUDŻET RYZYKA</p>
-      <h2>Większy promień rażenia wymaga mniejszej swobody</h2>
+    <section class="slide" data-section="02" data-title="Risk budget">
+      <p class="eyebrow">RISK BUDGET</p>
+      <h2>A larger blast radius requires less freedom</h2>
       <div class="risk-grid">
-        <div class="axis-y">TRUDNOŚĆ ODWRÓCENIA</div>
-        <div class="risk low"><b>Swobodnie</b><span>czytanie, wyszukiwanie, lokalne analizy</span></div>
-        <div class="risk medium"><b>W sandboxie</b><span>edycja kodu, testy, komendy build</span></div>
-        <div class="risk high"><b>Za zgodą</b><span>sieć, sekrety, publikacja artefaktów</span></div>
-        <div class="risk critical"><b>Poza agentem</b><span>produkcja, destrukcja, nieodwracalne decyzje</span></div>
-        <div class="axis-x">ZASIĘG SKUTKÓW</div>
+        <div class="axis-y">DIFFICULTY OF REVERSAL</div>
+        <div class="risk low"><b>Open</b><span>reading, search, and local analysis</span></div>
+        <div class="risk medium"><b>Sandboxed</b><span>code edits, tests, and build commands</span></div>
+        <div class="risk high"><b>Approval</b><span>network, secrets, and artifact publication</span></div>
+        <div class="risk critical"><b>Outside the agent</b><span>production, destruction, and irreversible decisions</span></div>
+        <div class="axis-x">SCOPE OF IMPACT</div>
       </div>
     </section>
 
     <section class="slide section-slide" data-section="03" data-title="Claude Code">
       <span class="section-no">03</span>
-      <div><p class="eyebrow">CLAUDE CODE</p><h2>Model, terminal i warstwy rozszerzeń</h2><p class="lede">Claude Code działa w repozytorium i korzysta z narzędzi. Konfiguracja decyduje, co widzi oraz co może zrobić.</p></div>
+      <div><p class="eyebrow">CLAUDE CODE</p><h2>Model, terminal, and extension layers</h2><p class="lede">Claude Code works inside the repository and uses tools. Configuration determines what it sees and what it can do.</p></div>
     </section>
 
-    <section class="slide" data-section="03" data-title="Mentalny model Claude Code">
-      <p class="eyebrow">MENTALNY MODEL</p>
-      <h2>Warstwy mają różne zadania</h2>
+    <section class="slide" data-section="03" data-title="Claude Code mental model">
+      <p class="eyebrow">MENTAL MODEL</p>
+      <h2>Each layer has a different job</h2>
       <div class="layer-stack">
-        <div><b>CLAUDE.md + rules</b><span>stały kontekst i konwencje</span></div>
-        <div><b>Skills</b><span>wiedza oraz workflow na żądanie</span></div>
-        <div><b>Hooks</b><span>automatyczne kontrole cyklu życia</span></div>
-        <div><b>Subagents / agent teams</b><span>izolacja lub koordynacja pracy</span></div>
-        <div><b>MCP</b><span>dostęp do danych i działań poza repo</span></div>
+        <div><b>CLAUDE.md + rules</b><span>persistent context and conventions</span></div>
+        <div><b>Skills</b><span>knowledge and workflows on demand</span></div>
+        <div><b>Hooks</b><span>automatic lifecycle controls</span></div>
+        <div><b>Subagents / agent teams</b><span>work isolation or coordination</span></div>
+        <div><b>MCP</b><span>access to data and actions outside the repo</span></div>
       </div>
-      <p class="source-tag">Źródło: Claude Code Docs, Extend Claude Code.</p>
+      <p class="source-tag">Source: Claude Code Docs, Extend Claude Code.</p>
     </section>
 
-    <section class="slide" data-section="03" data-title="Pamięć projektu">
-      <p class="eyebrow">PAMIĘĆ PROJEKTU</p>
-      <h2>Instrukcje, które zespół wersjonuje z kodem</h2>
+    <section class="slide" data-section="03" data-title="Project memory">
+      <p class="eyebrow">PROJECT MEMORY</p>
+      <h2>Instructions the team versions with code</h2>
       <div class="tree-and-notes">
         <pre><span>repo/</span>
 ├── <b>CLAUDE.md</b>
@@ -232,368 +232,380 @@
 ├── <b>.mcp.json</b>
 └── <b>docs/specs/</b></pre>
         <div>
-          <p><b>CLAUDE.md</b> zawiera polecenia build, konwencje i architekturę.</p>
-          <p><b>Rules</b> zawężają instrukcje do tematu lub ścieżki.</p>
-          <p><b>Git</b> zapewnia review, historię i wspólny standard.</p>
+          <p><b>CLAUDE.md</b> contains build commands, conventions, and architecture.</p>
+          <p><b>Rules</b> scope instructions to a topic or path.</p>
+          <p><b>Git</b> provides review, history, and a shared standard.</p>
         </div>
       </div>
-      <p class="source-tag">Anthropic zaleca zwięzły CLAUDE.md. Dokumentacja podaje cel poniżej 200 linii.</p>
+      <p class="source-tag">Anthropic recommends a concise CLAUDE.md. The documentation suggests a target below 200 lines.</p>
     </section>
 
-    <section class="slide" data-section="03" data-title="Dobór mechanizmu">
-      <p class="eyebrow">DOBÓR MECHANIZMU</p>
-      <h2>Każdy problem ma właściwą warstwę</h2>
+    <section class="slide" data-section="03" data-title="Choosing the mechanism">
+      <p class="eyebrow">CHOOSING THE MECHANISM</p>
+      <h2>Match each problem to the right layer</h2>
       <table class="decision-table">
         <tbody>
-          <tr><th>CLAUDE.md</th><td>Co Claude ma wiedzieć w każdej sesji?</td><td>komendy build i test</td></tr>
-          <tr><th>Rule</th><td>Co obowiązuje tylko w części repo?</td><td>zasady dla migracji DB</td></tr>
-          <tr><th>Skill</th><td>Jak wykonujemy powtarzalny workflow?</td><td>przygotowanie release</td></tr>
-          <tr><th>Hook</th><td>Co musi wydarzyć się automatycznie?</td><td>lint po edycji</td></tr>
-          <tr><th>Subagent</th><td>Jaka praca potrzebuje osobnego kontekstu?</td><td>analiza logów</td></tr>
-          <tr><th>MCP</th><td>Do jakiego systemu potrzebny jest dostęp?</td><td>GitHub lub Jira</td></tr>
+          <tr><th>CLAUDE.md</th><td>What must Claude know in every session?</td><td>build and test commands</td></tr>
+          <tr><th>Rule</th><td>What applies only to part of the repository?</td><td>database migration policy</td></tr>
+          <tr><th>Skill</th><td>How do we run a repeatable workflow?</td><td>release preparation</td></tr>
+          <tr><th>Hook</th><td>What must happen automatically?</td><td>lint after an edit</td></tr>
+          <tr><th>Subagent</th><td>Which work needs a separate context?</td><td>log analysis</td></tr>
+          <tr><th>MCP</th><td>Which system must the agent access?</td><td>GitHub or Jira</td></tr>
         </tbody>
       </table>
     </section>
 
-    <section class="slide" data-section="03" data-title="Kontekst">
-      <p class="eyebrow">KONTEKST JEST BUDŻETEM</p>
-      <h2>Mały zestaw silnych sygnałów</h2>
+    <section class="slide" data-section="03" data-title="Context">
+      <p class="eyebrow">CONTEXT IS A BUDGET</p>
+      <h2>A small set of strong signals</h2>
       <div class="context-funnel">
-        <div><b>1</b><span>cel + kryteria akceptacji</span></div>
-        <div><b>2</b><span>pliki i działający wzorzec</span></div>
-        <div><b>3</b><span>reguły dotyczące zadania</span></div>
-        <div><b>4</b><span>logi, historia i dokumentacja na żądanie</span></div>
+        <div><b>1</b><span>goal + acceptance criteria</span></div>
+        <div><b>2</b><span>files and a working pattern</span></div>
+        <div><b>3</b><span>rules relevant to the task</span></div>
+        <div><b>4</b><span>logs, history, and documentation on demand</span></div>
       </div>
-      <p class="callout">Długi kontekst podnosi koszt każdego kolejnego kroku i może osłabić ważne instrukcje.</p>
-      <p class="source-tag">Źródło: Anthropic, Effective Context Engineering for AI Agents.</p>
+      <p class="callout">Long context raises the cost of every later step and can weaken important instructions.</p>
+      <p class="source-tag">Source: Anthropic, Effective Context Engineering for AI Agents.</p>
     </section>
 
-    <section class="slide" data-section="03" data-title="Uprawnienia">
-      <p class="eyebrow">UPRAWNIENIA</p>
-      <h2>Model proponuje użycie narzędzia. Runtime egzekwuje decyzję.</h2>
+    <section class="slide" data-section="03" data-title="Permissions">
+      <p class="eyebrow">PERMISSIONS</p>
+      <h2>The model proposes a tool call. The runtime enforces the decision.</h2>
       <div class="permission-flow">
-        <div><b>Hook</b><span>może zablokować wywołanie</span></div>
-        <div><b>Deny</b><span>twardy zakaz</span></div>
-        <div><b>Ask</b><span>zgoda człowieka</span></div>
-        <div><b>Allow</b><span>jawna automatyzacja</span></div>
+        <div><b>Hook</b><span>can block the call</span></div>
+        <div><b>Deny</b><span>hard prohibition</span></div>
+        <div><b>Ask</b><span>human approval</span></div>
+        <div><b>Allow</b><span>explicit automation</span></div>
       </div>
-      <p class="callout">Instrukcja w CLAUDE.md wpływa na zachowanie. Permission rule lub hook tworzy granicę wykonawczą.</p>
-      <p class="source-tag">Źródło: Claude Code Docs, Configure permissions.</p>
+      <p class="callout">An instruction in CLAUDE.md shapes behavior. A permission rule or hook creates an execution boundary.</p>
+      <p class="source-tag">Source: Claude Code Docs, Configure permissions.</p>
     </section>
 
-    <section class="slide" data-section="03" data-title="Praktyczny rytm pracy">
-      <p class="eyebrow">PRAKTYCZNY RYTM</p>
-      <h2>Badanie przed implementacją</h2>
+    <section class="slide" data-section="03" data-title="Practical working rhythm">
+      <p class="eyebrow">PRACTICAL WORKING RHYTHM</p>
+      <h2>Investigation before implementation</h2>
       <ol class="process-row five">
-        <li><b>1</b><span>zbadaj repo</span></li><li><b>2</b><span>zapisz plan</span></li>
-        <li><b>3</b><span>zatwierdź granice</span></li><li><b>4</b><span>implementuj i testuj</span></li>
-        <li><b>5</b><span>przejrzyj diff</span></li>
+        <li><b>1</b><span>investigate the repo</span></li><li><b>2</b><span>write the plan</span></li>
+        <li><b>3</b><span>approve boundaries</span></li><li><b>4</b><span>implement and test</span></li>
+        <li><b>5</b><span>review the diff</span></li>
       </ol>
       <div class="command-strip"><code>/context</code><code>/compact</code><code>/clear</code><code>/permissions</code><code>/usage</code><code>/diff</code></div>
-      <p class="caption">Komendy zależą od wersji Claude Code. Aktualny opis znajduje się w dokumentacji.</p>
+      <p class="caption">Commands depend on the Claude Code version. Check the current documentation before the session.</p>
     </section>
 
-    <section class="slide section-slide" data-section="04" data-title="Niezawodność">
+    <section class="slide section-slide" data-section="04" data-title="Reliability">
       <span class="section-no">04</span>
-      <div><p class="eyebrow">HALUCYNACJE I GUARDRAILS</p><h2>Zaufanie wymaga dowodów</h2><p class="lede">Pewność wypowiedzi nie przewiduje poprawności wyniku.</p></div>
+      <div><p class="eyebrow">HALLUCINATIONS AND GUARDRAILS</p><h2>Trust requires evidence</h2><p class="lede">A confident response does not predict a correct outcome.</p></div>
     </section>
 
-    <section class="slide" data-section="04" data-title="Rodzaje halucynacji">
-      <p class="eyebrow">RODZAJE HALUCYNACJI W CODINGU</p>
-      <h2>Trzy typy fałszywego obrazu rzeczywistości</h2>
+    <section class="slide" data-section="04" data-title="Types of hallucination">
+      <p class="eyebrow">HALLUCINATIONS IN CODING</p>
+      <h2>Three forms of a false view of reality</h2>
       <div class="three-column hallucinations">
-        <div><b>Fałszywy fakt</b><p>Nieistniejące API, flaga, biblioteka lub zachowanie wersji.</p></div>
-        <div><b>Fałszywy stan</b><p>Założenie o kodzie, pliku lub środowisku bez sprawdzenia.</p></div>
-        <div><b>Fałszywe zakończenie</b><p>Deklaracja sukcesu bez testu, diffu lub obserwacji stanu.</p></div>
+        <div><b>False fact</b><p>A nonexistent API, flag, library, or version behavior.</p></div>
+        <div><b>False state</b><p>An assumption about code, files, or the environment without inspection.</p></div>
+        <div><b>False completion</b><p>A success claim without a test, diff, or state observation.</p></div>
       </div>
-      <p class="caption">W systemie agentowym błąd odpowiedzi może zamienić się w błędne działanie.</p>
+      <p class="caption">In an agentic system, a wrong answer can become a wrong action.</p>
     </section>
 
-    <section class="slide" data-section="04" data-title="Kontrakt dowodowy">
-      <p class="eyebrow">KONTRAKT DOWODOWY</p>
-      <h2>Twierdzenie potrzebuje sprawdzalnego źródła</h2>
+    <section class="slide" data-section="04" data-title="Evidence contract">
+      <p class="eyebrow">EVIDENCE CONTRACT</p>
+      <h2>Every claim needs a verifiable source</h2>
       <div class="evidence-table">
-        <div><b>Twierdzenie</b><span>„Testy przechodzą”</span><strong>log z komendy</strong></div>
-        <div><b>Twierdzenie</b><span>„API wspiera tę opcję”</span><strong>aktualna dokumentacja</strong></div>
-        <div><b>Twierdzenie</b><span>„Zmiana jest minimalna”</span><strong>diff + stat</strong></div>
-        <div><b>Twierdzenie</b><span>„Problem rozwiązany”</span><strong>kryteria akceptacji</strong></div>
+        <div><b>Claim</b><span>“The tests pass”</span><strong>command output</strong></div>
+        <div><b>Claim</b><span>“The API supports this option”</span><strong>current documentation</strong></div>
+        <div><b>Claim</b><span>“The change is minimal”</span><strong>diff + stat</strong></div>
+        <div><b>Claim</b><span>“The problem is solved”</span><strong>acceptance criteria</strong></div>
       </div>
-      <p class="callout">Jeżeli nie ma dowodu, odpowiedź powinna zawierać poziom niepewności i następny krok weryfikacji.</p>
+      <p class="callout">When evidence is missing, the response should state its uncertainty and the next verification step.</p>
     </section>
 
-    <section class="slide" data-section="04" data-title="Stos zabezpieczeń">
-      <p class="eyebrow">STOS ZABEZPIECZEŃ</p>
-      <h2>Miękkie wskazówki wspierają twarde granice</h2>
+    <section class="slide" data-section="04" data-title="Guardrail stack">
+      <p class="eyebrow">GUARDRAIL STACK</p>
+      <h2>Soft guidance supports hard boundaries</h2>
       <div class="guardrail-stack">
-        <div><b>4 · Proces</b><span>review, owner, rollback, incydent</span></div>
-        <div><b>3 · Weryfikacja</b><span>testy, schematy, polityki, evals</span></div>
-        <div><b>2 · Runtime</b><span>permissions, hooks, sandbox, limity</span></div>
-        <div><b>1 · Kontekst</b><span>prompt, CLAUDE.md, rules, spec</span></div>
+        <div><b>4 · Process</b><span>review, owner, rollback, incident</span></div>
+        <div><b>3 · Verification</b><span>tests, schemas, policies, evals</span></div>
+        <div><b>2 · Runtime</b><span>permissions, hooks, sandbox, limits</span></div>
+        <div><b>1 · Context</b><span>prompt, CLAUDE.md, rules, spec</span></div>
       </div>
-      <p class="source-tag">Anthropic rozdziela obronę modelu, środowiska oraz zewnętrznej treści.</p>
+      <p class="source-tag">Anthropic separates defenses across the model, environment, and external content.</p>
     </section>
 
-    <section class="slide" data-section="04" data-title="Granice, które nie giną z kontekstu">
-      <p class="eyebrow">GUARDRAILS POZA KONTEKSTEM</p>
-      <h2>Granice, które przetrwają długą sesję</h2>
+    <section class="slide" data-section="04" data-title="Boundaries outside context">
+      <p class="eyebrow">GUARDRAILS OUTSIDE CONTEXT</p>
+      <h2>Boundaries that survive a long session</h2>
       <div class="boundary-map">
-        <div><b>Nie czytaj sekretów</b><span>Read deny + brak sekretu w workspace</span></div>
-        <div><b>Nie wykonuj destrukcji</b><span>Bash deny + PreToolUse hook</span></div>
-        <div><b>Nie publikuj bez zgody</b><span>brak uprawnienia i osobna tożsamość</span></div>
-        <div><b>Zatrzymaj koszt</b><span>limit budżetu, czasu i iteracji</span></div>
+        <div><b>Do not read secrets</b><span>Read deny + no secret in the workspace</span></div>
+        <div><b>Do not run destructive actions</b><span>Bash deny + PreToolUse hook</span></div>
+        <div><b>Do not publish without approval</b><span>no permission and a separate identity</span></div>
+        <div><b>Stop the cost</b><span>budget, time, and iteration limits</span></div>
       </div>
-      <p class="callout">Prompt opisuje intencję. System uprawnień ogranicza realne możliwości.</p>
+      <p class="callout">The prompt describes intent. The permission system limits actual capability.</p>
     </section>
 
     <section class="slide" data-section="04" data-title="Prompt injection">
-      <p class="eyebrow">TREŚĆ ZEWNĘTRZNA</p>
-      <h2>Każdy dokument może stać się wejściem sterującym</h2>
+      <p class="eyebrow">EXTERNAL CONTENT</p>
+      <h2>Any document can become a control input</h2>
       <div class="attack-chain">
-        <span>issue / README / strona</span><i>1</i><span>instrukcja ukryta w treści</span><i>2</i><span>model zmienia plan</span><i>3</i><span>narzędzie wykonuje akcję</span>
+        <span>issue / README / website</span><i>1</i><span>instruction hidden in content</span><i>2</i><span>model changes the plan</span><i>3</i><span>tool executes an action</span>
       </div>
-      <div class="defense-line"><b>Ogranicz źródła</b><b>Oddziel od instrukcji</b><b>Ogranicz narzędzia</b><b>Wymagaj zgody na skutki</b></div>
-      <p class="source-tag">MCP i konektory poszerzają zasięg. Nie zastępują polityki uprawnień ani sandboxa.</p>
+      <div class="defense-line"><b>Limit sources</b><b>Separate data from instructions</b><b>Restrict tools</b><b>Require approval for side effects</b></div>
+      <p class="source-tag">MCP and connectors expand reach. They do not replace permission policies or a sandbox.</p>
     </section>
 
-    <section class="slide section-slide" data-section="05" data-title="SDLC i współpraca">
+    <section class="slide section-slide" data-section="05" data-title="SDLC and collaboration">
       <span class="section-no">05</span>
-      <div><p class="eyebrow">SDLC I ZESPÓŁ</p><h2>Agent pracuje w tym samym systemie kontroli jakości</h2><p class="lede">Repozytorium, CI i code review pozostają źródłem prawdy.</p></div>
+      <div><p class="eyebrow">SDLC AND TEAM</p><h2>The agent works inside the same quality system</h2><p class="lede">The repository, CI, and code review remain the source of truth.</p></div>
     </section>
 
-    <section class="slide" data-section="05" data-title="Agent w SDLC">
-      <p class="eyebrow">AGENT W SDLC</p>
-      <h2>Kontrakt i dowody przechodzą przez cały cykl</h2>
+    <section class="slide" data-section="05" data-title="Agent in the SDLC">
+      <p class="eyebrow">AGENT IN THE SDLC</p>
+      <h2>The contract and evidence span the full lifecycle</h2>
       <ol class="sdlc-flow">
-        <li><b>Problem</b><span>cel biznesowy i ryzyko</span></li>
-        <li><b>Spec</b><span>AC, ograniczenia, przypadki brzegowe</span></li>
-        <li><b>Plan</b><span>zakres plików i testów</span></li>
-        <li><b>Zmiana</b><span>izolowana gałąź lub worktree</span></li>
-        <li><b>Dowody</b><span>testy, skany, diff, trace</span></li>
-        <li><b>Review</b><span>człowiek odpowiada za merge</span></li>
+        <li><b>Problem</b><span>business goal and risk</span></li>
+        <li><b>Spec</b><span>AC, constraints, edge cases</span></li>
+        <li><b>Plan</b><span>file and test scope</span></li>
+        <li><b>Change</b><span>isolated branch or worktree</span></li>
+        <li><b>Evidence</b><span>tests, scans, diff, trace</span></li>
+        <li><b>Review</b><span>a human owns the merge</span></li>
       </ol>
     </section>
 
-    <section class="slide" data-section="05" data-title="Podział odpowiedzialności">
-      <p class="eyebrow">PODZIAŁ ODPOWIEDZIALNOŚCI</p>
-      <h2>Agent przyspiesza wykonanie. Zespół zachowuje decyzje.</h2>
+    <section class="slide" data-section="05" data-title="Division of responsibility">
+      <p class="eyebrow">DIVISION OF RESPONSIBILITY</p>
+      <h2>The agent accelerates execution. The team retains decisions.</h2>
       <table class="decision-table responsibility-table">
-        <thead><tr><th>Obszar</th><th>Agent</th><th>Człowiek</th></tr></thead>
+        <thead><tr><th>Area</th><th>Agent</th><th>Human</th></tr></thead>
         <tbody>
-          <tr><td>Zakres</td><td>proponuje plan i zależności</td><td>zatwierdza cel oraz kompromisy</td></tr>
-          <tr><td>Implementacja</td><td>edytuje, testuje, poprawia</td><td>interweniuje przy dryfie</td></tr>
-          <tr><td>Jakość</td><td>dostarcza dowody i self review</td><td>ocenia architekturę oraz ryzyko</td></tr>
-          <tr><td>Wydanie</td><td>przygotowuje artefakty</td><td>autoryzuje skutki zewnętrzne</td></tr>
+          <tr><td>Scope</td><td>proposes the plan and dependencies</td><td>approves the goal and tradeoffs</td></tr>
+          <tr><td>Implementation</td><td>edits, tests, and corrects</td><td>intervenes when the work drifts</td></tr>
+          <tr><td>Quality</td><td>provides evidence and self review</td><td>assesses architecture and risk</td></tr>
+          <tr><td>Release</td><td>prepares artifacts</td><td>authorizes external side effects</td></tr>
         </tbody>
       </table>
     </section>
 
-    <section class="slide" data-section="05" data-title="Wiele osób, jeden temat">
-      <p class="eyebrow">WIELE OSÓB · JEDEN TEMAT</p>
-      <h2>Równoległość działa przy rozłącznym ownership</h2>
+    <section class="slide" data-section="05" data-title="Several people, one topic">
+      <p class="eyebrow">SEVERAL PEOPLE · ONE TOPIC</p>
+      <h2>Parallel work needs separate ownership</h2>
       <div class="team-workflow">
-        <div class="shared"><b>Wspólna specyfikacja</b><span>interfejsy · kryteria · decyzje ADR</span></div>
-        <div><b>Strumień A</b><span>osobne pliki i worktree</span></div>
-        <div><b>Strumień B</b><span>osobne pliki i worktree</span></div>
-        <div><b>Strumień C</b><span>review lub testy niezależne</span></div>
-        <div class="shared"><b>Integracja</b><span>CI · kontrakty · merge owner</span></div>
+        <div class="shared"><b>Shared specification</b><span>interfaces · criteria · ADR decisions</span></div>
+        <div><b>Stream A</b><span>separate files and worktree</span></div>
+        <div><b>Stream B</b><span>separate files and worktree</span></div>
+        <div><b>Stream C</b><span>independent review or tests</span></div>
+        <div class="shared"><b>Integration</b><span>CI · contracts · merge owner</span></div>
       </div>
-      <p class="callout">Dwóch agentów edytujących ten sam plik tworzy konflikt, a nie skalowanie.</p>
+      <p class="callout">Two agents editing the same file create a conflict, not scale.</p>
     </section>
 
-    <section class="slide" data-section="05" data-title="Subagent i agent team">
-      <p class="eyebrow">PARALELIZACJA</p>
-      <h2>Najlżejszy mechanizm, który rozwiązuje problem</h2>
+    <section class="slide" data-section="05" data-title="Subagent and agent team">
+      <p class="eyebrow">PARALLELIZATION</p>
+      <h2>The lightest mechanism that solves the problem</h2>
       <div class="compare-columns three-way">
-        <div><h3>Subagent</h3><b>Izolacja kontekstu</b><p>Badanie, logi, review lub zadanie poboczne. Wynik wraca jako podsumowanie.</p></div>
-        <div><h3>Agent team</h3><b>Koordynacja sesji</b><p>Praca z komunikacją między agentami i wspólną listą zadań. Funkcja eksperymentalna.</p></div>
-        <div><h3>Zespół ludzi</h3><b>Decyzje i integracja</b><p>Ownership, kompromisy architektoniczne, priorytety oraz akceptacja ryzyka.</p></div>
+        <div><h3>Subagent</h3><b>Context isolation</b><p>Research, logs, review, or a side task. The result returns as a summary.</p></div>
+        <div><h3>Agent team</h3><b>Session coordination</b><p>Work with direct agent communication and a shared task list. An experimental feature.</p></div>
+        <div><h3>Human team</h3><b>Decisions and integration</b><p>Ownership, architectural tradeoffs, priorities, and risk acceptance.</p></div>
       </div>
-      <p class="source-tag">Claude Code Docs: agent teams są eksperymentalne i domyślnie wyłączone.</p>
+      <p class="source-tag">Claude Code Docs: agent teams are experimental and disabled by default.</p>
     </section>
 
-    <section class="slide section-slide" data-section="06" data-title="Koszt i jakość">
+    <section class="slide section-slide" data-section="06" data-title="Cost and quality">
       <span class="section-no">06</span>
-      <div><p class="eyebrow">FINOPS I REGRESJE</p><h2>Koszt jest cechą architektury</h2><p class="lede">Każda gałąź pracy, dodatkowy kontekst i kolejna próba zużywa budżet.</p></div>
+      <div><p class="eyebrow">FINOPS AND REGRESSIONS</p><h2>Cost is an architecture property</h2><p class="lede">Every branch of work, extra context block, and additional attempt consumes budget.</p></div>
     </section>
 
-    <section class="slide" data-section="06" data-title="Anatomia kosztu">
-      <p class="eyebrow">ANATOMIA KOSZTU</p>
-      <h2>Co powiększa rachunek</h2>
+    <section class="slide" data-section="06" data-title="Cost anatomy">
+      <p class="eyebrow">COST ANATOMY</p>
+      <h2>What increases the bill</h2>
       <div class="cost-equation">
-        <span><b>kontekst</b><small>tokeny wejścia</small></span><i>×</i>
-        <span><b>model</b><small>stawka i effort</small></span><i>×</i>
-        <span><b>kroki</b><small>iteracje i tool calls</small></span><i>×</i>
-        <span><b>gałęzie</b><small>subagents i teams</small></span>
+        <span><b>context</b><small>input tokens</small></span><i>×</i>
+        <span><b>model</b><small>rate and effort</small></span><i>×</i>
+        <span><b>steps</b><small>iterations and tool calls</small></span><i>×</i>
+        <span><b>branches</b><small>subagents and teams</small></span>
       </div>
-      <p class="callout">Optymalizacja pojedynczego promptu ma mały efekt, gdy system uruchamia za dużo kroków lub agentów.</p>
+      <p class="callout">Optimizing one prompt has little impact when the system runs too many steps or agents.</p>
     </section>
 
-    <section class="slide" data-section="06" data-title="Dźwignie FinOps">
-      <p class="eyebrow">DŹWIGNIE FINOPS</p>
-      <h2>Najpierw usuń pracę, która nie wnosi informacji</h2>
+    <section class="slide" data-section="06" data-title="FinOps levers">
+      <p class="eyebrow">FINOPS LEVERS</p>
+      <h2>Remove work that adds no information</h2>
       <div class="finops-list">
-        <div><b>Świeża sesja</b><span><code>/clear</code> między niezależnymi zadaniami</span></div>
-        <div><b>Właściwy model</b><span>tańszy model dla prostych zadań i workerów</span></div>
-        <div><b>Kontekst na żądanie</b><span>skills, scoped rules, ograniczone MCP</span></div>
-        <div><b>Krótka pętla</b><span>konkretne AC, szybkie testy, limit iteracji</span></div>
-        <div><b>Pomiar</b><span><code>/usage</code>, telemetry, koszt na udane zadanie</span></div>
+        <div><b>Fresh session</b><span><code>/clear</code> between unrelated tasks</span></div>
+        <div><b>Right model</b><span>a cheaper model for simple tasks and workers</span></div>
+        <div><b>Context on demand</b><span>skills, scoped rules, limited MCP</span></div>
+        <div><b>Short loop</b><span>specific AC, fast tests, iteration limit</span></div>
+        <div><b>Measurement</b><span><code>/usage</code>, telemetry, cost per successful task</span></div>
       </div>
-      <p class="source-tag">Źródło: Claude Code Docs, Manage costs effectively.</p>
+      <p class="source-tag">Source: Claude Code Docs, Manage costs effectively.</p>
+
     </section>
 
-    <section class="slide" data-section="06" data-title="Regresja jakości">
-      <p class="eyebrow">DEGRADACJA I REGRESJA</p>
-      <h2>Ten sam workflow może działać gorzej jutro</h2>
+    <section class="slide" data-section="06" data-title="RTK, Caveman, Ponytail">
+      <p class="eyebrow">THREE DIFFERENT LEVERS</p>
+      <h2>They reduce different kinds of waste</h2>
+      <div class="three-tools">
+        <div><b>RTK</b><span>terminal to input</span><p>Filters noisy command output before the model sees it.</p></div>
+        <div><b>Caveman</b><span>agent to output</span><p>Shortens response prose while preserving technical substance.</p></div>
+        <div><b>Ponytail</b><span>decision to code</span><p>Pushes toward the simplest solution and actively looks for code to remove.</p></div>
+      </div>
+      <p class="source-tag">RTK reduces shell output, not the whole bill. Caveman can add overhead to an answer that is already short. Links: SOURCES.md.</p>
+    </section>
+
+    <section class="slide" data-section="06" data-title="Quality regression">
+      <p class="eyebrow">DEGRADATION AND REGRESSION</p>
+      <h2>The same workflow can perform worse tomorrow</h2>
       <div class="regression-causes">
-        <div><b>Model</b><span>nowa wersja lub routing</span></div>
-        <div><b>Kontekst</b><span>rosnący CLAUDE.md i konflikt reguł</span></div>
-        <div><b>Narzędzia</b><span>zmiana API, schematu lub uprawnień</span></div>
-        <div><b>Dane</b><span>nowe przypadki i dryf wejścia</span></div>
-        <div><b>Proces</b><span>osłabienie review lub testów</span></div>
+        <div><b>Model</b><span>a new version or routing change</span></div>
+        <div><b>Context</b><span>a growing CLAUDE.md or conflicting rules</span></div>
+        <div><b>Tools</b><span>an API, schema, or permission change</span></div>
+        <div><b>Data</b><span>new cases and input drift</span></div>
+        <div><b>Process</b><span>weaker review or tests</span></div>
       </div>
-      <p class="caption">Regresja jakości wymaga diagnozy całego systemu, nie tylko modelu.</p>
+      <p class="caption">Quality regression requires diagnosis of the whole system, not only the model.</p>
     </section>
 
-    <section class="slide" data-section="06" data-title="Ochrona przed regresją">
-      <p class="eyebrow">OCHRONA PRZED REGRESJĄ</p>
-      <h2>Stały zestaw zadań i kontrolowane wdrożenie</h2>
+    <section class="slide" data-section="06" data-title="Regression protection">
+      <p class="eyebrow">REGRESSION PROTECTION</p>
+      <h2>A stable task set and controlled rollout</h2>
       <ol class="process-row regression-loop">
-        <li><b>1</b><span>golden set z realnych zadań</span></li><li><b>2</b><span>wiele prób na przypadek</span></li>
-        <li><b>3</b><span>ocena wyniku i trajektorii</span></li><li><b>4</b><span>canary na małej grupie</span></li>
-        <li><b>5</b><span>monitoring i rollback</span></li>
+        <li><b>1</b><span>golden set from real tasks</span></li><li><b>2</b><span>multiple trials per case</span></li>
+        <li><b>3</b><span>outcome and trajectory grading</span></li><li><b>4</b><span>canary with a small group</span></li>
+        <li><b>5</b><span>monitoring and rollback</span></li>
       </ol>
-      <p class="callout">Zapisuj wersję modelu, konfigurację, dostępne narzędzia i trace. Bez tego porównanie jest anegdotą.</p>
-      <p class="source-tag">Źródła: Anthropic, Demystifying Evals for AI Agents oraz Postmortem of Three Recent Issues.</p>
+      <p class="callout">Record the model version, configuration, available tools, and trace. Without them, comparison becomes anecdotal.</p>
+      <p class="source-tag">Sources: Anthropic, Demystifying Evals for AI Agents and Postmortem of Three Recent Issues.</p>
     </section>
 
-    <section class="slide" data-section="06" data-title="Analiza porażki">
-      <p class="eyebrow">ANALIZA PORAŻKI</p>
-      <h2>Trace mówi jak. Outcome mówi czy.</h2>
+    <section class="slide" data-section="06" data-title="Failure analysis">
+      <p class="eyebrow">FAILURE ANALYSIS</p>
+      <h2>The trace explains how. The outcome confirms whether.</h2>
       <div class="failure-analysis">
-        <div class="trace"><b>TRACE</b><p>prompty, kontekst, decyzje, tool calls, wyniki, poprawki</p></div>
-        <div class="outcome"><b>OUTCOME</b><p>stan repo, testy, artefakt, skutki zewnętrzne, koszt końcowy</p></div>
-        <div class="diagnosis"><b>DIAGNOZA</b><p>pierwszy błędny krok, brakujący sygnał i nieskuteczna bariera</p></div>
+        <div class="trace"><b>TRACE</b><p>prompts, context, decisions, tool calls, results, and corrections</p></div>
+        <div class="outcome"><b>OUTCOME</b><p>repository state, tests, artifact, external effects, and final cost</p></div>
+        <div class="diagnosis"><b>DIAGNOSIS</b><p>the first wrong step, missing signal, and ineffective barrier</p></div>
       </div>
-      <p class="source-tag">W evalach agentowych Anthropic rozdziela transcript lub trajectory od finalnego outcome.</p>
+      <p class="source-tag">Anthropic separates the transcript or trajectory from the final outcome in agent evaluations.</p>
     </section>
 
-    <section class="slide" data-section="06" data-title="Taksonomia porażek">
-      <p class="eyebrow">TAKSONOMIA PORAŻEK</p>
-      <h2>Najpierw klasyfikacja, potem poprawka</h2>
+    <section class="slide" data-section="06" data-title="Failure taxonomy">
+      <p class="eyebrow">FAILURE TAXONOMY</p>
+      <h2>Classify the failure before changing the system</h2>
       <div class="failure-codes">
-        <div><b>C1</b><span>niejasny kontrakt</span><small>popraw spec</small></div>
-        <div><b>C2</b><span>brak kontekstu</span><small>dodaj źródło</small></div>
-        <div><b>T1</b><span>złe narzędzie</span><small>popraw interfejs</small></div>
-        <div><b>M1</b><span>błąd rozumowania</span><small>model lub dekompozycja</small></div>
-        <div><b>V1</b><span>słaba weryfikacja</span><small>dodaj grader</small></div>
-        <div><b>O1</b><span>konflikt pracy</span><small>zmień ownership</small></div>
+        <div><b>C1</b><span>unclear contract</span><small>improve the spec</small></div>
+        <div><b>C2</b><span>missing context</span><small>add a source</small></div>
+        <div><b>T1</b><span>wrong tool</span><small>improve the interface</small></div>
+        <div><b>M1</b><span>reasoning error</span><small>model or decomposition</small></div>
+        <div><b>V1</b><span>weak verification</span><small>add a grader</small></div>
+        <div><b>O1</b><span>work conflict</span><small>change ownership</small></div>
       </div>
-      <p class="callout">Analizuj pierwszy błąd, nie ostatni widoczny objaw.</p>
+      <p class="callout">Analyze the first error, not the last visible symptom.</p>
     </section>
 
-    <section class="slide" data-section="06" data-title="Analiza porażki kosztowej">
-      <p class="eyebrow">PORAŻKA KOSZTOWA</p>
-      <h2>Dobry wynik także może być nieopłacalny</h2>
+    <section class="slide" data-section="06" data-title="Cost failure analysis">
+      <p class="eyebrow">COST FAILURE</p>
+      <h2>A correct outcome can still be uneconomical</h2>
       <table class="decision-table cost-failure-table">
         <tbody>
-          <tr><th>Wskaźnik</th><td>Koszt na zaakceptowane zadanie</td><td>łączy koszt z wartością</td></tr>
-          <tr><th>Objaw</th><td>Dużo tokenów bez zmiany outcome</td><td>zbędny kontekst lub pętla</td></tr>
-          <tr><th>Objaw</th><td>Wiele odrzuconych prób</td><td>słaby kontrakt albo grader</td></tr>
-          <tr><th>Objaw</th><td>Równoległość bez skrócenia lead time</td><td>koszt koordynacji przewyższa zysk</td></tr>
+          <tr><th>Metric</th><td>Cost per accepted task</td><td>connects spend with value</td></tr>
+          <tr><th>Symptom</th><td>Many tokens with no outcome change</td><td>stale context or a loop</td></tr>
+          <tr><th>Symptom</th><td>Many rejected attempts</td><td>weak contract or grader</td></tr>
+          <tr><th>Symptom</th><td>Parallel work without lower lead time</td><td>coordination costs exceed the gain</td></tr>
         </tbody>
       </table>
     </section>
 
-    <section class="slide" data-section="06" data-title="Metryki">
-      <p class="eyebrow">METRYKI</p>
-      <h2>Mierz system, nie liczbę wygenerowanych linii</h2>
+    <section class="slide" data-section="06" data-title="Metrics">
+      <p class="eyebrow">METRICS</p>
+      <h2>Measure the system, not generated lines</h2>
       <div class="metric-grid">
-        <div><b>Outcome</b><span>pass rate · defekty · rollback</span></div>
-        <div><b>Effort</b><span>czas review · liczba korekt</span></div>
+        <div><b>Outcome</b><span>pass rate · defects · rollback</span></div>
+        <div><b>Effort</b><span>review time · corrections</span></div>
         <div><b>Flow</b><span>lead time · throughput</span></div>
-        <div><b>Cost</b><span>tokeny · koszt / sukces</span></div>
-        <div><b>Safety</b><span>blokady · naruszenia granic</span></div>
-        <div><b>Learning</b><span>powtarzalne błędy · poprawki reguł</span></div>
+        <div><b>Cost</b><span>tokens · cost / success</span></div>
+        <div><b>Safety</b><span>blocks · boundary violations</span></div>
+        <div><b>Learning</b><span>repeated errors · rule updates</span></div>
       </div>
-      <p class="caption">DORA pozostaje użytecznym pomiarem systemowym. Dodaj metryki specyficzne dla agenta.</p>
+      <p class="caption">DORA remains useful at the system level. Add agent-specific metrics.</p>
     </section>
 
     <section class="slide section-slide" data-section="07" data-title="Hackathon">
       <span class="section-no">07</span>
-      <div><p class="eyebrow">HACKATHON</p><h2>Szybkość w bezpiecznym pudełku</h2><p class="lede">Eksperyment ma dać dowód wartości i listę warunków dalszego wdrożenia.</p></div>
+      <div><p class="eyebrow">HACKATHON</p><h2>Speed inside a safe boundary</h2><p class="lede">The experiment should produce evidence of value and a list of conditions for further adoption.</p></div>
     </section>
 
-    <section class="slide" data-section="07" data-title="Kontrakt hackathonu">
-      <p class="eyebrow">KONTRAKT HACKATHONU</p>
-      <h2>Wspólne zasady wykonania</h2>
+    <section class="slide" data-section="07" data-title="Hackathon contract">
+      <p class="eyebrow">HACKATHON CONTRACT</p>
+      <h2>Shared execution rules</h2>
       <div class="hackathon-contract">
-        <div class="allowed"><b>Agent może</b><span>czytać repo</span><span>edytować branch lub worktree</span><span>uruchamiać lokalne testy</span><span>proponować dokumentację</span></div>
-        <div class="approval"><b>Wymaga zgody</b><span>sieć i zewnętrzne systemy</span><span>nowe zależności</span><span>publikacja artefaktów</span><span>commit lub PR zgodnie z zasadami zespołu</span></div>
-        <div class="blocked"><b>Poza zakresem</b><span>produkcja</span><span>sekrety</span><span>destrukcja danych</span><span>merge bez review</span></div>
+        <div class="allowed"><b>The agent may</b><span>read the repository</span><span>edit a branch or worktree</span><span>run local tests</span><span>propose documentation</span></div>
+        <div class="approval"><b>Approval required</b><span>network and external systems</span><span>new dependencies</span><span>artifact publication</span><span>commit or PR according to team policy</span></div>
+        <div class="blocked"><b>Out of scope</b><span>production</span><span>secrets</span><span>data destruction</span><span>merge without review</span></div>
       </div>
     </section>
 
     <section class="slide" data-section="07" data-title="Definition of done">
       <p class="eyebrow">DEFINITION OF DONE</p>
-      <h2>Demo pokazuje wynik i dowody</h2>
+      <h2>The demo shows the outcome and evidence</h2>
       <div class="demo-proof">
-        <div><b>1</b><span>Problem i mierzalny cel</span></div>
-        <div><b>2</b><span>Wybrany poziom autonomii</span></div>
-        <div><b>3</b><span>Guardrails i zakres narzędzi</span></div>
-        <div><b>4</b><span>Wynik zweryfikowany testem lub scenariuszem</span></div>
-        <div><b>5</b><span>Koszt, porażki i wnioski</span></div>
+        <div><b>1</b><span>Problem and measurable goal</span></div>
+        <div><b>2</b><span>Selected autonomy level</span></div>
+        <div><b>3</b><span>Guardrails and tool scope</span></div>
+        <div><b>4</b><span>Outcome verified by a test or scenario</span></div>
+        <div><b>5</b><span>Cost, failures, and lessons</span></div>
       </div>
-      <p class="callout">Najcenniejszy wynik może brzmieć: „ten proces nie nadaje się jeszcze do autonomii”.</p>
+      <p class="callout">The most valuable conclusion may be: “this process is not ready for autonomy yet.”</p>
     </section>
 
-    <section class="slide" data-section="07" data-title="Pierwsza godzina">
-      <p class="eyebrow">PIERWSZA GODZINA ZESPOŁU</p>
-      <h2>Kolejność, która ogranicza koszt błędnego startu</h2>
+    <section class="slide" data-section="07" data-title="The first hour">
+      <p class="eyebrow">THE TEAM'S FIRST HOUR</p>
+      <h2>A sequence that limits the cost of a false start</h2>
       <ol class="first-hour">
-        <li><b>0–10</b><span>problem, owner, ograniczenia</span></li>
-        <li><b>10–25</b><span>repo research i aktualny workflow</span></li>
+        <li><b>0–10</b><span>problem, owner, constraints</span></li>
+        <li><b>10–25</b><span>repository research and current workflow</span></li>
         <li><b>25–35</b><span>spec, AC, guardrails</span></li>
-        <li><b>35–45</b><span>plan i podział plików</span></li>
-        <li><b>45–60</b><span>pierwsza cienka ścieżka z testem</span></li>
+        <li><b>35–45</b><span>plan and file ownership</span></li>
+        <li><b>45–60</b><span>first thin slice with a test</span></li>
       </ol>
-      <p class="caption">To wskazówka organizacyjna, nie ćwiczenie do wykonania podczas kickoffu.</p>
+      <p class="caption">This is an organizational guide, not an exercise during the kickoff.</p>
     </section>
 
-    <section class="slide resources" data-section="07" data-title="Materiały">
-      <p class="eyebrow">MATERIAŁY DO DALSZEJ PRACY</p>
-      <h2>Źródła i tutoriale</h2>
+    <section class="slide resources" data-section="07" data-title="Resources">
+      <p class="eyebrow">RESOURCES FOR FOLLOW-UP</p>
+      <h2>Sources and tutorials</h2>
       <div class="resource-list">
-        <a href="https://code.claude.com/docs/en/best-practices"><b>Claude Code best practices</b><span>workflow, CLAUDE.md, weryfikacja</span></a>
-        <a href="https://code.claude.com/docs/en/features-overview"><b>Extend Claude Code</b><span>skills, hooks, subagents, teams i MCP</span></a>
-        <a href="https://code.claude.com/docs/en/permissions"><b>Permissions</b><span>allow, ask, deny i tryby uprawnień</span></a>
-        <a href="https://code.claude.com/docs/en/costs"><b>Cost management</b><span>usage, kontekst, modele i telemetry</span></a>
-        <a href="https://www.anthropic.com/engineering/building-effective-agents"><b>Building Effective AI Agents</b><span>wzorce architektoniczne</span></a>
-        <a href="https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents"><b>Demystifying Evals</b><span>task, trial, grader, trace i outcome</span></a>
+        <a href="https://code.claude.com/docs/en/best-practices"><b>Claude Code best practices</b><span>workflow, CLAUDE.md, verification</span></a>
+        <a href="https://code.claude.com/docs/en/features-overview"><b>Extend Claude Code</b><span>skills, hooks, subagents, teams, and MCP</span></a>
+        <a href="https://code.claude.com/docs/en/permissions"><b>Permissions</b><span>allow, ask, deny, and permission modes</span></a>
+        <a href="https://code.claude.com/docs/en/costs"><b>Cost management</b><span>usage, context, models, and telemetry</span></a>
+        <a href="https://www.anthropic.com/engineering/building-effective-agents"><b>Building Effective AI Agents</b><span>architecture patterns</span></a>
+        <a href="https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents"><b>Demystifying Evals</b><span>task, trial, grader, trace, and outcome</span></a>
       </div>
-      <p class="caption">Pełna lista wraz z notatkami znajduje się w pliku SOURCES.md w repozytorium.</p>
+      <p class="caption">The complete list and caveats are available in SOURCES.md.</p>
     </section>
 
-    <section class="slide finale" data-section="KONIEC" data-title="Kontrolowana autonomia">
+    <section class="slide finale" data-section="END" data-title="Controlled autonomy">
       <p class="eyebrow">KICKOFF COMPLETE</p>
-      <h2>Autonomia zaczyna się<br><span>od dobrze zaprojektowanych granic</span></h2>
-      <div class="final-line"><span>kontrakt</span><span>kontekst</span><span>narzędzia</span><span>dowody</span><span>metryki</span></div>
-      <p class="closing">Budujmy system, któremu można zaufać dlatego, że potrafimy go sprawdzić.</p>
+      <h2>Autonomy begins<br><span>with well-designed boundaries</span></h2>
+      <div class="final-line"><span>contract</span><span>context</span><span>tools</span><span>evidence</span><span>metrics</span></div>
+      <p class="closing">Build a system we can trust because we know how to verify it.</p>
     </section>
   </main>
 
   <div id="progress" aria-hidden="true"><span></span></div>
-  <nav id="chrome" aria-label="Sterowanie prezentacją">
+  <nav id="chrome" aria-label="Presentation controls">
     <span id="sectionLabel"></span>
     <span id="counter"></span>
     <button id="overviewButton" type="button" title="Overview (O)">O</button>
-    <button id="helpButton" type="button" title="Pomoc (?)">?</button>
+    <button id="helpButton" type="button" title="Help (?)">?</button>
   </nav>
 
   <dialog id="helpDialog">
-    <h2>Sterowanie</h2>
-    <p><kbd>→</kbd> <kbd>Space</kbd> następny slajd · <kbd>←</kbd> poprzedni · <kbd>Home</kbd> początek · <kbd>End</kbd> koniec</p>
-    <p><kbd>O</kbd> overview · <kbd>F</kbd> pełny ekran · <kbd>?</kbd> pomoc</p>
-    <button type="button">Zamknij</button>
+    <h2>Controls</h2>
+    <p><kbd>→</kbd> <kbd>Space</kbd> next slide · <kbd>←</kbd> previous · <kbd>Home</kbd> start · <kbd>End</kbd> finish</p>
+    <p><kbd>O</kbd> overview · <kbd>F</kbd> full screen · <kbd>?</kbd> help</p>
+    <button type="button">Close</button>
   </dialog>
   <script src="slides.js"></script>
 </body>
