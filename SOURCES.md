@@ -7,6 +7,12 @@ Materials reviewed on September 21, 2026. Claude Code and the supporting tool ec
 - `dubel/ai-level-up-training` - the adoption ladder, task contract, context, safety, and the mechanics of the offline presentation.
 - `AI_Enablement_Cyber_Ark_MIS_Intro.pptx` - the five-level maturity model, visual identity, and the introductory Claude Code material.
 
+## Spec-driven development frameworks
+
+- [GitHub Spec Kit](https://github.github.com/spec-kit/) - a specification lifecycle covering specification, planning, tasks, implementation, and convergence.
+- [GSD Core](https://github.com/open-gsd/gsd-core) - the current Git. Ship. Done. framework and its discuss, plan, execute, verify, and ship phase loop.
+- [BMad Method](https://github.com/bmad-code-org/BMAD-METHOD) - adaptive AI-driven development workflows with durable context and specialized product, architecture, development, and testing perspectives.
+
 ## Claude Code
 
 - [Claude Code: Best practices for agentic coding](https://www.anthropic.com/engineering/claude-code-best-practices) - CLAUDE.md, permissions, explore-plan-code workflows, tests, and course correction.
