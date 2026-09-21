@@ -1,6 +1,6 @@
 # AI Enablement - Claude Code kickoff
 
-A static HTML presentation for the CyberArk MIS 2026 hackathon kickoff. The material covers AI adoption levels, agentic system architecture, Claude Code, hallucinations, guardrails, SDLC, team collaboration, FinOps, quality regressions, and failure analysis.
+A static HTML presentation for the Palo Alto 2026 hackathon kickoff. The material covers AI adoption levels, agentic system architecture, Claude Code, hallucinations, guardrails, SDLC, team collaboration, FinOps, quality regressions, and failure analysis.
 
 ## Open the presentation
 
